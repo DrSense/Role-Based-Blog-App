@@ -1,0 +1,90 @@
+
+/* Reset and base styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  background-color: #f4f6f9;
+  color: #333;
+  padding: 40px 20px;
+  line-height: 1.6;
+}
+
+/* Headings */
+h1 {
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+  color: #2d3436;
+}
+
+#welcomeMessage {
+  font-size: 1.2rem;
+  color: #636e72;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 1.6rem;
+  margin-bottom: 18px;
+  color: #2f3542;
+  border-bottom: 2px solid #dfe6e9;
+  padding-bottom: 5px;
+}
+
+/* Container for user list */
+.user-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+/* Each user card */
+.user-card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.03);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+}
+
+.user-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.07);
+}
+
+.user-card strong {
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+/* Optional badge style */
+.user-card .role-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  font-size: 0.75rem;
+  background-color: #dfe6e9;
+  color: #2d3436;
+  border-radius: 50px;
+  margin-top: 6px;
+}
+
+/* Responsive touch */
+@media (max-width: 600px) {
+  body {
+    padding: 20px 15px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+}
