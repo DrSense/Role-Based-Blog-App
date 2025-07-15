@@ -10,9 +10,10 @@ body {
   font-family: 'Inter', 'Segoe UI', sans-serif;
   background-color: #f4f6f9;
   color: #333;
-  padding: 40px 20px;
+  padding: 40px 60px;
   line-height: 1.6;
 }
+
 
 /* Headings */
 h1 {
@@ -37,6 +38,7 @@ h2 {
 
 /* Container for user list */
 .user-list {
+  margin: 20px 5px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 20px;
@@ -51,6 +53,9 @@ h2 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.03);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   position: relative;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  border-radius: 6px;
 }
 
 .user-card:hover {
